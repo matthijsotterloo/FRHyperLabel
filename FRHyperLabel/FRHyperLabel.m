@@ -58,13 +58,11 @@ static UIColor *FRHyperLabelLinkColorHighlight;
 	}
 	
 	if (!self.linkAttributeDefault) {
-		self.linkAttributeDefault = @{NSForegroundColorAttributeName: FRHyperLabelLinkColorDefault,
-									  NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
+		self.linkAttributeDefault = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 	}
 	
 	if (!self.linkAttributeHighlight) {
-		self.linkAttributeHighlight = @{NSForegroundColorAttributeName: FRHyperLabelLinkColorHighlight,
-										NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
+		self.linkAttributeHighlight = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
 	}
 }
 
